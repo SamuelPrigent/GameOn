@@ -622,6 +622,13 @@ Anciennement à 768px mais pas de logique pour l'affichage
   }
 }
 
+@media screen and (max-width: 551px) {
+  .hero-headline {
+    font-size: 3.2rem;
+    white-space: normal;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .topnav a {
     display: none;
@@ -630,6 +637,13 @@ Anciennement à 768px mais pas de logique pour l'affichage
     float: right;
     display: block;
     margin-top: -15px;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .hero-headline {
+    font-size: 2.9rem;
+    white-space: normal;
   }
 }
 
