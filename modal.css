@@ -531,6 +531,14 @@ Img en displey flex sur Desktop pour appliquer un padding ratio //
 */
 
 @media screen and (max-width: 800px) {
+  main {
+    margin: 1px 10px 15px;
+  }
+
+  .topnav {
+    margin: 3.5% 2% 3.5%;
+  }
+
   .hero-section {
     display: block;
     box-shadow: unset;
@@ -636,14 +644,27 @@ Anciennement à 768px mais pas de logique pour l'affichage
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    margin-top: 0px; /* -15px  originellement */
   }
 }
 
 @media screen and (max-width: 497px) {
   .hero-headline {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
     white-space: normal;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hero-headline {
+    font-size: 2.4rem; /*
+    white-space: normal;*/
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .hero-headline {
+    font-size: 2.2rem;
   }
 }
 
