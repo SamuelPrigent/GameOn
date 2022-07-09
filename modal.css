@@ -574,9 +574,9 @@ Img en displey flex sur Desktop pour appliquer un padding ratio //
     padding: 12px 41px;
   }
   .copyrights {
-    margin-top: 17px;
+    margin-top: 12px;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.79rem;
   }
 }
 /*
