@@ -48,7 +48,7 @@ img {
   padding: 12px 12px;
   margin: 5px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 19px;
   font-family: Roboto, sans-serif;
 }
 
@@ -370,9 +370,10 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
-  border-radius: 10px;
+  /*
+  min-height: 93vh; */
   display: grid;
+  border-radius: 10px;
   grid-template-columns: repeat(12, 1fr);
   overflow: hidden;
   box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
@@ -385,15 +386,22 @@ input[data-error]::after {
   color: #fff;
   position: relative;
   text-align: left;
-  min-width: 424px;
+  min-width: 330px;
+  /*
+  max-width de base à 424px
+  */
 }
+
+/*
+Modif pour ne plsu couper l'image
+*/
 .hero-content::after {
   content: "";
   width: 100%;
   height: 100%;
   background: #232323;
   position: absolute;
-  right: -80px;
+  right: 0px; /*-80px*/
   top: 0;
 }
 .hero-content > * {
@@ -406,15 +414,16 @@ input[data-error]::after {
   white-space: nowrap;
 }
 .hero-text {
-  width: 146%;
+  width: 105%; /* utilité ? 145% de base */
   font-weight: normal;
   margin-top: 57px;
   padding: 0;
+  font-size: 22px; /*Ajout d'une font size*/
 }
 .btn-signup {
   outline: none;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 15px 23px;
   margin: 0;
   margin-top: 59px;
@@ -431,8 +440,8 @@ input[data-error]::after {
 .copyrights {
   color: #fe142f;
   padding: 0;
-  font-size: 1rem;
-  margin: 60px 0 60px;
+  font-size: 0.95rem;
+  margin: 45px 0 45px;
   font-weight: bolder;
 }
 .hero-section > .btn-signup {
@@ -442,6 +451,27 @@ footer {
   padding-left: 2vw;
   padding-right: 2vw;
   margin: 0 20px;
+}
+
+@media screen and (max-width: 1078px) {
+  .hero-headline {
+    font-size: 5.1rem;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+}
+
+/*
+La nav bar passe à gauche 
+*/
+
+@media screen and (min-width: 801px) and (max-width: 1078px) {
+  .main-navbar {
+    float: left;
+    margin-top: 20px;
+  }
 }
 
 /*
@@ -458,6 +488,42 @@ Adaptation pour la case principale version desktop
   .hero-content {
     padding: 42px 55px;
   }
+}
+
+/*
+Img en displey flex sur Desktop pour appliquer un padding ratio //  
+*/
+
+@media screen and (min-width: 800px) {
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-img img {
+    min-width: 680px;
+    /*
+    min-height: 680px;
+    max-height: 680px;
+    max-width: 680px;*/
+  }
+
+  /*Padding ratio */
+  /*
+  .hero-img {
+    padding-bottom: 34.5%;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  .hero-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  */
 }
 
 /*
