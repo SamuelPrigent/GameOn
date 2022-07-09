@@ -410,7 +410,7 @@ Modif pour ne plsu couper l'image
 }
 .hero-headline {
   font-size: 6rem;
-  font-weight: normal;
+  /*  font-weight: normal;*/
   white-space: nowrap;
 }
 .hero-text {
@@ -440,7 +440,7 @@ Modif pour ne plsu couper l'image
 .copyrights {
   color: #fe142f;
   padding: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 45px 0 45px;
   font-weight: bolder;
 }
@@ -536,7 +536,7 @@ Img en displey flex sur Desktop pour appliquer un padding ratio //
   }
 
   .topnav {
-    margin: 3.5% 2% 3.5%;
+    margin: 2% 2% 1.8%;
   }
 
   .hero-section {
@@ -566,7 +566,7 @@ Img en displey flex sur Desktop pour appliquer un padding ratio //
   }
   .hero-img img {
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .hero-section > .btn-signup {
     display: block;
@@ -576,6 +576,7 @@ Img en displey flex sur Desktop pour appliquer un padding ratio //
   .copyrights {
     margin-top: 17px;
     text-align: center;
+    font-size: 0.9rem;
   }
 }
 /*
@@ -624,7 +625,7 @@ Anciennement à 768px mais pas de logique pour l'affichage
   }
 
   .hero-text {
-    margin-top: 31px;
+    margin-top: 22px;
     font-size: 19px;
     width: 100%;
   }
@@ -634,6 +635,17 @@ Anciennement à 768px mais pas de logique pour l'affichage
   .hero-headline {
     font-size: 3.2rem;
     white-space: normal;
+  }
+
+  .header-logo img {
+    height: 49px;
+    padding: 12px;
+  }
+
+  .hero-text {
+    margin-top: 22px;
+    font-size: 16px;
+    width: 100%;
   }
 }
 
