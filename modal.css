@@ -123,6 +123,8 @@ main {
   font-size: 16px;
 }
 
+/* Div du modal */
+
 .bground {
   display: none;
   position: fixed;
@@ -677,6 +679,7 @@ Anciennement à 768px mais pas de logique pour l'affichage
   }
 }
 
+/*Animation modal open effet slide vers le bas */
 @keyframes modalopen {
   from {
     opacity: 0;
