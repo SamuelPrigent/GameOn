@@ -14,7 +14,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-image: url("background.png");
+  /*
+  background-image: url("background.png"); L'image en question n'est pas présente */
   font-family: var(--font-default);
   font-size: 18px;
   max-width: 1300px;
@@ -430,9 +431,10 @@ Modif pour ne plsu couper l'image
 }
 .hero-img {
   grid-column: span 8;
+  aspect-ratio: 1/0.92; /* Empêche l'image d'être déformé */
 }
 .hero-img img {
-  width: 100%;
+  /* width: 100%; Je laisse seulement la hauteur à 100% pour que l'aspect-ratio fonctionne */
   height: 100%;
   display: block;
   padding: 0;
@@ -501,29 +503,8 @@ Img en displey flex sur Desktop pour appliquer un padding ratio //
   }
 
   .hero-img img {
-    min-width: 680px;
-    /*
-    min-height: 680px;
-    max-height: 680px;
-    max-width: 680px;*/
+    min-width: 700px;
   }
-
-  /*Padding ratio */
-  /*
-  .hero-img {
-    padding-bottom: 34.5%;
-    height: auto;
-    width: 100%;
-    position: relative;
-  }
-
-  .hero-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-  }
-  */
 }
 
 /*
