@@ -455,16 +455,6 @@ footer {
   margin: 0 20px;
 }
 
-@media screen and (max-width: 1078px) {
-  .hero-headline {
-    font-size: 5.1rem;
-  }
-
-  .hero-text {
-    font-size: 20px;
-  }
-}
-
 /*
 La nav bar passe à gauche 
 */
@@ -477,8 +467,34 @@ La nav bar passe à gauche
 }
 
 /*
-Adaptation pour la case principale version desktop
+Adaptations responsive pour la case principale sur desktop
 */
+
+@media screen and (max-width: 1200px) {
+  .hero-headline {
+    font-size: 5.2rem;
+    white-space: normal;
+    white-space: nowrap;
+  }
+
+  .hero-text {
+    font-size: 21px;
+  }
+
+  .hero-content {
+    padding: 45px 59px;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .hero-headline {
+    font-size: 5.1rem;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .hero-headline {
