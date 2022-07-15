@@ -28,4 +28,6 @@ function closeModal() {
   modalbg.style.display = "none";
 }
 
-// FormData - Stock des données du formulaire
+// FormData - Stock des données du formulaire ?
+
+// use formData ?
